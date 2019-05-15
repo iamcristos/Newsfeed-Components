@@ -64,6 +64,34 @@
 .menu--open {
   display: block;
 }
+form {
+  margin: 100px auto 20px auto;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 50%;
+}
+form input {
+  width: 80%;
+  display: block;
+  box-sizing: border-box;
+  margin: 20px;
+  height: 30px;
+}
+form textarea {
+  width: 80%;
+  display: block;
+  box-sizing: border-box;
+  margin: 20px;
+  height: 200px;
+}
+form button {
+  width: 80%;
+  display: block;
+  box-sizing: border-box;
+  margin: 20px;
+  height: 30px;
+}
 .articles {
   margin-top: 95px;
 }

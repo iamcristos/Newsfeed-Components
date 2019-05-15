@@ -10,7 +10,8 @@ class Article {
     // create a reference to the ".expandButton" class. 
     this.expandButton = document.querySelectorAll(`.expandButton`);
     // Using your expandButton reference, update the text on your expandButton to say "expand"
-    this.expandButton[this.index].innerText = 'Read'
+    this.expandButton[this.index].innerText = 'Read';
+    
     // Set a click handler on the expandButton reference, calling the expandArticle method.
    this.expandButton[this.index].addEventListener('click', (e)=>  this.expandArticle(e.target))
   //  close article
@@ -28,9 +29,7 @@ class Article {
     this.button.innerText = 'X'
     this.button.style.backgroundColor = 'red'
     this.domElement.prepend(this.button);
-    this.button.addEventListener('click',()=>{
-      this.domElement.style.display = 'none'
-    })
+    this.button.addEventListener('click',()=>this.domElement.style.display = 'none')
   }
 }
 
@@ -41,6 +40,8 @@ class Article {
 - With your selection in place, now chain .forEach() on to the articles variable to iterate over the articles NodeList and create a new instance of Article by passing in each article as a parameter to the Article class.
 
 */
+
+
 
 let articles= document.querySelectorAll('.article');
 articles.forEach((article, index) =>new Article(article, index));
