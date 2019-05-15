@@ -7,7 +7,7 @@ class Article {
     // create a reference to the ".expandButton" class. 
     this.expandButton = document.querySelector(`${this.domElement} .expandButton`);
     // Using your expandButton reference, update the text on your expandButton to say "expand"
-    
+    this.expandButton.innerText = 'Expand'
     // Set a click handler on the expandButton reference, calling the expandArticle method.
     
   }
