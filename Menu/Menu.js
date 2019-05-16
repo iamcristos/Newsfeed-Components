@@ -2,10 +2,10 @@
 const toggleMenu = () => {
   // Toggle the "menu--open" class on your menu refence. 
   menu.classList.toggle('menu--open');
-  menu.className != 'menu--open' 
-    ? TweenMax.staggerFrom('.menu--open',2,{delay:1,opacity:0.8, x:-50, width:0},'.3') 
-    : TweenMax.staggerTo('.menu--open',2,{x:0, delay:1,display:'none'})
-  
+  // console.log(menu.classList.contains())
+  menu.classList[1] == 'menu--open' 
+      ? TweenMax.to(menu,2,{delay:1,opacity:0.8, x:-1,width:'350px', display:'block'},'.3') 
+      : TweenMax.to(menu ,2,{x:-1, delay:0, width:'0px', display: 'none'})
 }
 
 // Start Here: Create a reference to the ".menu" class

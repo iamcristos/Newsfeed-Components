@@ -60,9 +60,10 @@
   font-size: 32px;
   padding: 30px 0;
   text-align: center;
+  opacity: 1;
 }
 .menu--open {
-  display: block;
+  width: 0px;
 }
 form {
   margin: 100px auto 20px auto;
